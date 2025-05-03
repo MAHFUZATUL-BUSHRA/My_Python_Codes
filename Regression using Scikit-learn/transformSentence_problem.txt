@@ -1,0 +1,47 @@
+Problem: transformSentence
+
+Description:
+You are given a sentence composed of one or more words separated by spaces.
+
+Task:
+Transform each word in the sentence according to the following rules:
+1. Keep the first character of each word unchanged.
+2. For every subsequent character in a word:
+   - If the previous character (case-insensitive) is less than the current one, convert the current character to uppercase.
+   - If the previous character (case-insensitive) is greater than the current one, convert the current character to lowercase.
+   - If both characters are equal, leave the current character unchanged.
+
+Note:
+- Comparisons are made using ASCII values after converting characters to lowercase.
+
+Test Cases:
+
+Test Case 1
+Input:
+a Blue MOON
+Expected Output:
+a BLUe MOOn
+
+Test Case 2
+Input:
+ab cB GG
+Expected Output:
+aB cb GG
+
+Test Case 3
+Input:
+Hello world
+Expected Output:
+HElLo wOrlD
+
+Test Case 4
+Input:
+a a a
+Expected Output:
+a a a
+
+Test Case 5
+Input:
+xyz ZYX
+Expected Output:
+xYz Zyx
